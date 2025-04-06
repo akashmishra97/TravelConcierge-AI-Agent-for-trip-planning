@@ -6,7 +6,6 @@ A smart travel concierge powered by Google's Gemini AI that helps plan trips, cr
 
 - Create detailed travel itineraries
 - Get destination-specific recommendations
-- Tech-focused travel planning
 - Modern web interface using Streamlit
 - Structured day-by-day planning
 
