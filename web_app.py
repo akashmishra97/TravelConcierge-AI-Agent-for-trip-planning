@@ -58,12 +58,6 @@ st.markdown("""
     .stTextInput label {
         color: white !important;
     }
-    .input-container {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 2rem;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -92,15 +86,12 @@ def main():
                     st.markdown(f'<div class="ai-response">🤖 AI: {message["content"]}</div>', unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
-        # Input container
-        st.markdown('<div class="input-container">', unsafe_allow_html=True)
-        # User input
+        # User input directly in the UI
         user_input = st.text_input(
             "Ask me anything about travel planning!",
             placeholder="e.g., Create a 3-day tech-focused itinerary for San Francisco",
             key="user_input"
         )
-        st.markdown('</div>', unsafe_allow_html=True)
 
         if user_input:
             # Add user message to chat history
